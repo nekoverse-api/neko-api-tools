@@ -65,8 +65,8 @@ const Welcome = () => {
       <div aria-hidden className="">
         <Neko width={50} />
       </div>
-      <div className="text-xl font-semibold select-none">bruno</div>
-      <div className="mt-4">{t('WELCOME.ABOUT_BRUNO')}</div>
+      <div className="text-xl font-semibold select-none">猫 - Neko</div>
+      <div className="mt-4">{t('WELCOME.ABOUT_NEKO')}</div>
 
       <div className="uppercase font-semibold heading mt-10">{t('COMMON.COLLECTIONS')}</div>
       <div className="mt-4 flex items-center collection-options select-none">
@@ -102,7 +102,7 @@ const Welcome = () => {
       <div className="mt-4 flex flex-col collection-options select-none">
         <div className="flex items-center mt-2">
           <a
-            href="https://docs.usebruno.com"
+            href="https://home.nekoverse.me/"
             aria-label="Read documentation"
             target="_blank"
             rel="noopener noreferrer"
@@ -114,7 +114,7 @@ const Welcome = () => {
         </div>
         <div className="flex items-center mt-2">
           <a
-            href="https://github.com/usebruno/bruno/issues"
+            href="https://github.com/nekoverse-api/neko-api-tools/issues"
             aria-label="Report issues on GitHub"
             target="_blank"
             rel="noopener noreferrer"
@@ -126,7 +126,7 @@ const Welcome = () => {
         </div>
         <div className="flex items-center mt-2">
           <a
-            href="https://github.com/usebruno/bruno"
+            href="https://github.com/nekoverse-api/neko-api-tools"
             aria-label="Go to GitHub repository"
             target="_blank"
             rel="noopener noreferrer"

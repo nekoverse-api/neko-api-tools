@@ -37,8 +37,8 @@ const ShareCollection = ({ onClose, collection }) => {
                 <Neko width={28} />
               </div>
               <div className="flex-1">
-                <div className="font-medium">Bruno Collection</div>
-                <div className="text-xs">Export in Bruno format</div>
+                <div className="font-medium">Neko Collection</div>
+                <div className="text-xs">Export in Neko format</div>
               </div>
             </div>
             

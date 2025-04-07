@@ -22,7 +22,7 @@ export default defineConfig({
     tsconfigPath: './jsconfig.json', // Specifies the path to the JavaScript/TypeScript configuration file
   },
   html: {
-    title: 'Bruno'
+    title: '猫 - Neko'
   },
   tools: {
     rspack: {
