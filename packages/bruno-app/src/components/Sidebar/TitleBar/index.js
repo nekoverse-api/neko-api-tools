@@ -1,9 +1,9 @@
 import toast from 'react-hot-toast';
-import Bruno from 'components/Bruno';
 import Dropdown from 'components/Dropdown';
 import CreateCollection from '../CreateCollection';
 import ImportCollection from 'components/Sidebar/ImportCollection';
 import ImportCollectionLocation from 'components/Sidebar/ImportCollectionLocation';
+import Neko from 'components/Neko/index';
 
 import { IconDots } from '@tabler/icons';
 import { useState, forwardRef, useRef } from 'react';
@@ -84,7 +84,7 @@ const TitleBar = () => {
       <div className="flex items-center">
         <button className="flex items-center gap-2 text-sm font-medium" onClick={handleTitleClick}>
           <span aria-hidden>
-            <Bruno width={30} />
+            <Neko width={30} />
           </span>
           bruno
         </button>

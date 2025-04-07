@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Bruno from 'components/Bruno/index';
+import Neko from 'components/Neko/index';
 
 class ErrorBoundary extends React.Component {
   constructor(props) {
@@ -37,7 +37,7 @@ class ErrorBoundary extends React.Component {
         <div className="flex text-center justify-center p-20 h-full">
           <div className="bg-white rounded-lg p-10 w-full">
             <div className="m-auto" style={{ width: '256px' }}>
-              <Bruno width={256} />
+              <Neko width={256} />
             </div>
 
             <h1 className="text-2xl font-semibold text-red-600 mb-2">Oops! Something went wrong</h1>

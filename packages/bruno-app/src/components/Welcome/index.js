@@ -5,11 +5,11 @@ import { useTranslation } from 'react-i18next';
 import { openCollection, importCollection } from 'providers/ReduxStore/slices/collections/actions';
 import { IconBrandGithub, IconPlus, IconDownload, IconFolders, IconSpeakerphone, IconBook } from '@tabler/icons';
 
-import Bruno from 'components/Bruno';
 import CreateCollection from 'components/Sidebar/CreateCollection';
 import ImportCollection from 'components/Sidebar/ImportCollection';
 import ImportCollectionLocation from 'components/Sidebar/ImportCollectionLocation';
 import StyledWrapper from './StyledWrapper';
+import Neko from 'components/Neko/index';
 
 const Welcome = () => {
   const dispatch = useDispatch();
@@ -63,7 +63,7 @@ const Welcome = () => {
       ) : null}
 
       <div aria-hidden className="">
-        <Bruno width={50} />
+        <Neko width={50} />
       </div>
       <div className="text-xl font-semibold select-none">bruno</div>
       <div className="mt-4">{t('WELCOME.ABOUT_BRUNO')}</div>
