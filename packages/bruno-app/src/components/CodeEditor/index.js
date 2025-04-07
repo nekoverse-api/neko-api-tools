@@ -120,6 +120,9 @@ if (!SERVER_RENDERED) {
 }
 
 export default class CodeEditor extends React.Component {
+  TEST_STATUS_BLOCK_SNIPPET = 'test("Status should be 200", () => {\n  expect(res.getStatus()).to.equal(200);\n});\n\n';
+  TEST_BODY_BLOCK_SNIPPET = 'test("Body should have JSON", () => {\n  expect(res.getBody()).to.eql({ hello: "Neko" });\n});\n\n';
+
   constructor(props) {
     super(props);
 
@@ -222,6 +225,18 @@ export default class CodeEditor extends React.Component {
           } else {
             this.editor.toggleComment();
           }
+        },
+        'Cmd-O': () => {
+          editor.replaceSelection(this.TEST_STATUS_BLOCK_SNIPPET);
+        },
+        'Ctrl-O': () => {
+          editor.replaceSelection(this.TEST_STATUS_BLOCK_SNIPPET);
+        },
+        'Cmd-P': () => {
+          editor.replaceSelection(this.TEST_BODY_BLOCK_SNIPPET);
+        },
+        'Ctrl-P': () => {
+          editor.replaceSelection(this.TEST_BODY_BLOCK_SNIPPET);
         }
       },
       foldOptions: {
