@@ -1,4 +1,4 @@
-import Bruno from './Bruno';
+import Home from './Home';
 import GlobalStyle from '../globalStyles';
 import '../i18n';
 import Main from './Main';
@@ -9,7 +9,7 @@ export default function App() {
       <main>
         <Main>
           <GlobalStyle />
-          <Bruno />
+          <Home />
         </Main>
       </main>
     </div>
